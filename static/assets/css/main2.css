@@ -1,0 +1,16 @@
+#binary {position:absolute; height:15%; top:9%; right:10px;}
+
+@media screen and (max-width: 396px) {
+  #binary2 {
+    height:10px;
+  }
+}
+
+
+@media screen and (max-width: 403px) {
+  #github {
+    position:absolute;
+    height:1px
+    float:right;
+  }
+}
