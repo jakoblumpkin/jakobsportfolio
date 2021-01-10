@@ -23,7 +23,7 @@
 
 		<!-- Nav -->
 			<nav id="nav">
-				<ul class="container">
+				<ul class="container" >
 					<li><a href="#top">Header</a></li>
 					<li><a href="#work">About</a></li>
 					<li><a href="#portfolio">My Projects</a></li>
@@ -49,8 +49,8 @@
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
-								<h1>Hey I'm <strong>Jakob Lumpkin</strong>.</h1>
-								<h1>I'm a<strong> Web Developer</strong>.</h1
+								<h1 class="titleN">Hey I'm <strong>Jakob Lumpkin</strong>.</h1>
+								<h1 class="titleN">I'm a<strong> Web Developer</strong>.</h1
 							</header>
 							<p>Welcome to my personal portfolio website, where i will display my recent projects
 								and links to my <a target="_blank" href="https://github.com/jakoblumpkin"><strong>github</strong></a>
@@ -135,6 +135,19 @@
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 
+								<h3>Notary Signing Agent</h3>
+								<p>Link to <a target="_blank" href="https://github.com/jakoblumpkin/notary">github code</a><br>
+								Link to <a target="_blank" href="https://houstonnotary.herokuapp.com/">website</a></p>
+								<p>
+									I created this for a notary sign agent.
+									I used a template then I moved somethings
+									around and added couple of features.
+								</p>
+								<img id="notaryImage" src="{% static 'images/notarysite.jpg' %}">
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
 								<h3>Signin/Sign out TO DO LIST</h3>
 								<p>Link to <a target="_blank" href="https://github.com/jakoblumpkin/todolist2">github code</a><br>
 									Link to <a target="_blank" href="https://newtodolist123.herokuapp.com/">website</a></p>
@@ -144,10 +157,11 @@
 									app. I added a couple of functions to it like, ability to delete a specific item,
 									delete all items from list to start from fresh and login/logout functionality.
 								</p>
-								<img style="right: 10%;  width: 110%; "src="{% static 'images/todolistpic.jpg' %}"/>
+								<img id="toDo" src="{% static 'images/todolistpic.jpg' %}">
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
+
 							<article class="box style2">
 								<h3>mini demo bank account(fake money)</h3>
 								<p>Link to <a target="_blank" href="https://github.com/jakoblumpkin/bankaccountt-live/tree/master">github code</a><br>
@@ -155,17 +169,9 @@
 								<p>On this site a person has the ability to create their own account.
 									After that you can login, then you can either deposit or withdraw money
 								from your account(fake money).</p>
-								<img style="height:400px;  "src="{% static 'images/bank image.png' %}"/>
+								<img style="width:90% "src="{% static 'images/bank image.png' %}"/>
 							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-                            <!--
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#"></a></h3>
-								<p></p>
-							</article>
-							-->
+
 
 						</div>
 
