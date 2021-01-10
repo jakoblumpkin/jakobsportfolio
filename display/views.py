@@ -13,16 +13,17 @@ def sendemail(request):
     subject=request.POST['subject']
     email=request.POST['email']
     name=request.POST['name']
-    if request.method=='POST':
-       send_mail('portfolio Subject: '+subject,
-                 'Message: '+message+' Name: '+name+' Email: '+email,
-                 settings.EMAIL_HOST_USER,
-                 ['lumpkinjakobr@gmail.com'],
-                 fail_silently=False)
-       # send_mail('Jakob\'s Portfolio',
-       #           f'Hey {name} I have gotten your message published on \'Jakob\'s portfolio\' '
-       #           f' website. I will be reaching out to you shortly.',
-       #           settings.EMAIL_HOST_USER,
-       #           [email],
-       #           fail_silently=False)
+    # if request.method=='POST':
+    #    send_mail('portfolio Subject: '+subject,
+    #              'Message: '+message+'\nName: '+name+' \nEmail: '+email,
+    #              settings.EMAIL_HOST_USER,
+    #              ['lumpkinjakobr@gmail.com'],
+    #              fail_silently=False)
+    if request.method == 'POST':
+        send_mail('portfolio Subject: ' + subject,
+        'Message: ' + message + '\nName: ' + name + ' \nEmail: ' + email,
+        'Lumpkinjakobr@gmail.com',
+        ['lumpkinjakobr@gmail.com'],
+        fail_silently=False)
+
     return redirect('/')

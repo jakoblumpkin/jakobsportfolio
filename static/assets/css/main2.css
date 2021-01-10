@@ -14,3 +14,28 @@
     float:right;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .titleN {
+  font-size:25px;
+  }
+  #github{
+  position:absolute;
+  left:5px;
+  }
+  .container{
+    font-size:9px;
+  }
+
+}
+@media screen and (max-width: 375px) {
+  #github{
+  position:absolute;
+  right:-15px;
+  }
+}
+#toDo{
+right: 10%;
+width: 105%;
+}
+

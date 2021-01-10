@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '^obdws&f#p=b%n$=wl2*+o&97i%mg+fp!9ye6es&!w4hytlqg!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['jakobsportfolio.herokuapp.com', '127.0.0.1', 'jakobsportfolio.com']
 
@@ -125,10 +125,20 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'static')
 ]
 
-EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_HOST_USER='lumpkinjakobr@gmail.com'
-EMAIL_HOST_PASSWORD='realistic10'
-EMAIL_PORT=587
-EMAIL_USE_TLS=True
+# EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST='smtp.gmail.com'
+# EMAIL_HOST_USER='lumpkinjakobr@gmail.com'
+# EMAIL_HOST_PASSWORD='realistic10'
+# EMAIL_PORT=587
+# EMAIL_USE_TLS=True
 
+EMAIL_BACKEND = '"sendgrid_backend.SendgridBackend"'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+SENDGRID_API_KEY = os.environ.get('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')
+SENDGRID_ECHO_TO_STDOUT=True
+SENDGRID_SANDBOX_MODE_IN_DEBUG=False
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+# DEFAULT_FROM_EMAIL = 'Lumpkinjakobr@gmail.com'
