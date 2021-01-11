@@ -23,7 +23,6 @@ def sendemail(request):
         send_mail('portfolio Subject: ' + subject,
         'Message: ' + message + '\nName: ' + name + ' \nEmail: ' + email,
         'Lumpkinjakobr@gmail.com',
-        ['lumpkinjakobr@gmail.com'],
+        ['Lumpkinjakobr@gmail.com'],
         fail_silently=False)
-
     return redirect('/')
