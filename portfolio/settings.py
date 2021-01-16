@@ -25,7 +25,7 @@ SECRET_KEY = '^obdws&f#p=b%n$=wl2*+o&97i%mg+fp!9ye6es&!w4hytlqg!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['jakobsportfolio.herokuapp.com', '127.0.0.1', 'jakobsportfolio.com']
+ALLOWED_HOSTS = ['jakobsportfolio.herokuapp.com', '127.0.0.1', 'jakobsportfolio.com', '*']
 
 
 # Application definition
