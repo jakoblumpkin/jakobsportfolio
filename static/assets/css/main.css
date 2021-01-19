@@ -2453,3 +2453,24 @@ input, select, textarea {
 #notaryImage{
 width:90%;
 }
+
+imageS
+
+
+#pleasework{
+
+}
+
+@media screen and (max-width: 768px) {
+#pleasework{
+    position:absolute;
+    top:-60px;
+}
+}
+
+@media screen and (max-width: 425px) {
+#pleasework{
+    position:absolute;
+    top:-39px;
+}
+}
